@@ -1,0 +1,126 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(58, 56, 56);
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    padding: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header::before {
+    background: url('https://source.unsplash.com/user/erondu/1600x900') no-repeat center center/cover;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+}
+
+.header-div {
+    /* border: 2px red solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    /* border: 2px green solid; */
+}
+
+.logo-text {
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: ceneter;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+    letter-spacing: .1rem;
+}
+
+.logo-img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 200vmax;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid {
+    /* border: 2px solid yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    padding: 15px;
+    list-style-type: none;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1.4px;
+}
+
+li a:hover {
+    size: 1.4rem;
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+.right {
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+    text-align: center;
+}
+
+.call_div, .email_div {
+    background-color: crimson;
+    border: 1px solid red;
+    padding: 5px 15px;
+    color: white;
+}
+
+.call_div:hover, .email_div:hover {
+    background-color: red;
+}
+
+main {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    border: 1px red solid;
+    padding: 5px 20px;
+    background-color: rgba(255, 0, 0, .5);
+}
+
+main h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+main p {
+    text-align: justify;
+    color: white;
+}
